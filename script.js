@@ -21,18 +21,18 @@ function display_Content(val){
         result.value += val;
     }
 }
-
+// The clear_output function clears the calender on clicking the AC button
 function clear_output(){
     var result = document.getElementById("result");
     result.value = "";
 }
-
+// The calculate function computes the expression and displays in the claculator on clicking the = symbol.
 function calculate(){
     var result = document.getElementById("result");
     var ans = eval(result.value);
     result.value = ans;
 }
-
+// The delete_content function removes a character on clicking the backspace button on the calender.
 function delete_content(){
     var result =document.getElementById("result");
     result.value = result.value.slice(0, -1);
